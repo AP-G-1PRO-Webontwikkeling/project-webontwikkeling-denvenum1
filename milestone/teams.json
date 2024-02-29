@@ -1,0 +1,40 @@
+{
+  "teams": [
+    {
+      "id": "teams-001",
+      "name": "Sentinels",
+      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
+      "players": ["Phoenix", "Jett", "Sova", "Breach", "Omen"]
+    },
+    {
+      "id": "teams-002",
+      "name": "Strikers",
+      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/StrikersLogo.jpg?raw=true",
+      "players": ["Breach", "Sage", "Raze", "Yoru", "Cypher"]
+    },
+    {
+      "id": "teams-003",
+      "name": "Titans",
+      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/TitansLogo.jpg?raw=true",
+      "players": ["Omen", "Viper", "Reyna", "Killjoy", "Skye"]
+    },
+    {
+      "id": "teams-004",
+      "name": "Guardians",
+      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
+      "players": ["Sova", "Cypher", "Brimstone", "Phoenix", "Sage"]
+    },
+    {
+      "id": "teams-005",
+      "name": "Renegades",
+      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+      "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
+    },
+    {
+      "id": "teams-006",
+      "name": "Outlaws",
+      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/OutlawsLogo.jpg?raw=true",
+      "players": ["Killjoy", "Raze", "Sova", "Omen", "Yoru"]
+    }
+  ]
+}
