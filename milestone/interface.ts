@@ -8,7 +8,7 @@ export interface Character {
     description:    string;
     age:            number;
     onMission:      boolean;
-    birthdate:      Date;
+    birthdate:      string;
     country:        string;
     profilePicture: string;
     abilities:      string[];
