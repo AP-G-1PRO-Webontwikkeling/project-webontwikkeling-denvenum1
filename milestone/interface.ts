@@ -1,8 +1,4 @@
-export interface Valorant {
-    characters: Character[];
-}
-
-export interface Character {
+export interface Characters {
     id:             string;
     name:           string;
     description:    string;
