@@ -11,7 +11,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/PhoenixPortrait.webp",
         "abilities": ["Blaze", "Curveball", "Hot Hands", "Run It Back"],
         "role": "duelist",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-001",
             "name": "Sentinels",
@@ -30,7 +30,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/JettPortrait.webp",
         "abilities": ["Cloudburst", "Updraft", "Tailwind", "Blade Storm"],
         "role": "duelist",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-001",
             "name": "Sentinels",
@@ -49,7 +49,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SovaPortrait.webp",
         "abilities": ["Shock Bolt", "Owl Drone", "Recon Bolt", "Hunter's Fury"],
         "role": "initiator",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-004",
             "name": "Guardians",
@@ -68,7 +68,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/BreachPortrait.webp",
         "abilities": ["Aftershock", "Flashpoint", "Fault Line", "Rolling Thunder"],
         "role": "initiator",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-002",
             "name": "Strikers",
@@ -87,7 +87,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/OmenPortrait.webp",
         "abilities": ["Shrouded Step", "Paranoia", "Dark Cover", "From the Shadows"],
         "role": "controller",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
             "id": "teams-003",
             "name": "Titans",
@@ -106,7 +106,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/CypherPortrait.webp",
         "abilities": ["Trapwire", "Cyber Cage", "Spycam", "Neural Theft"],
         "role": "sentinel",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-004",
             "name": "Guardians",
@@ -125,7 +125,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/KilljoyPortrait.webp",
         "abilities": ["Alarmbot", "Turret", "Nanoswarm", "Lockdown"],
         "role": "sentinal",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-006",
             "name": "Outlaws",
@@ -144,7 +144,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/ViperPortrait.webp",
         "abilities": ["Snakebite", "Poison Cloud", "Toxic Screen", "Viper's Pit"],
         "role": "controller",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
             "id": "teams-005",
             "name": "Renegades",
@@ -163,7 +163,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/ReynaPortrait.webp",
         "abilities": ["Dismiss", "Devour", "Leer", "Empress"],
         "role": "duelist",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-005",
             "name": "Renegades",
@@ -182,7 +182,7 @@
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
         "abilities": ["Regrowth", "Trailblazer", "Guiding Light", "Seekers"],
         "role": "initiator",
-        "roleSymbol": "",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-005",
       "name": "Renegades",
