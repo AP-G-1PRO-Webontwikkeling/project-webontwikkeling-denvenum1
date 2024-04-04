@@ -13,6 +13,7 @@ h1, h2, h3 {
 
 h1 {
     font-weight:bolder;
+    color: var(--colorRed);
 }
 h2 {
     letter-spacing: 3px;
@@ -34,11 +35,12 @@ a, footer p {
     --colorWhite: #fffffb;
     --colorPurple: #41006A;
     --colorLightPurple: #FFA9F6;
+    --colorRed: #F94554;
 }
 
 /*--- overzichtpagina van characters ---*/
 body {
-    border: black 2px solid;
+    box-shadow: var(--colorBlack) 0px 3px 8px;
     border-radius: 1rem;
     margin: 2rem;
     padding: 2rem;
@@ -49,9 +51,11 @@ body {
     max-width: 100%;
     padding-top: 2rem;
     justify-content: flex-start;
+    border-bottom: var(--colorBlack) 1px solid;
 }
 .filter li {
-    width: 20%;
+    width: 15%;
+    padding: 2rem;
 }
 main section article ul {
     display: flex;
@@ -67,23 +71,25 @@ main section article ul li {
     align-items: center;
     justify-content: flex-start;
     max-width: 100%;
-    padding-top: 2rem;
+    padding: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin: 0.5rem 0rem;
 }
 main section article ul li .name {
    display: flex;
    flex-wrap: wrap;
-   flex-direction: row;
-   align-items: center;
-   width: 19%;
+   flex-direction: column;
+   width: 15%;
+   align-items: flex-start
 }
-main section article ul li a, .onMission, .birthDate,.role {
-    width: 20%;
-    
+main section article ul li a, .onMission, .center, .birthDate {
+    width: 15%;
 }
+
 main section article ul li .abilities {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 15%;
 }
 main section article ul li .abilities p {
     background-color: var(--colorLightBlue);
@@ -95,11 +101,15 @@ main section article ul li .abilities p {
     margin-right: 1rem;
     padding-left: 1rem;
     margin-top: 0.5rem;
-    box-shadow: var(--colorLightBlue) 0px 7px 29px 0px;
+    box-shadow: var(--colorBlack) 0px 3px 8px;
 }
 main section article ul li .abilities p:nth-child(4) {
     background-color: var(--colorLightPurple);
     border: 1px solid var(--colorPurple);
-    box-shadow: var(--colorLightPurple) 0px 7px 29px 0px;
+    box-shadow: var(--colorBlack) 0px 3px 8px;
+}
+
+.center img {
+    width: 3rem;
 }
 

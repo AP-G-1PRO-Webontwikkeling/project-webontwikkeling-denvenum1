@@ -24,11 +24,9 @@
                             <p><%= data.characters[i].abilities[2] %></p>
                             <p><%= data.characters[i].abilities[3] %></p>
                         </div>
-                        <div>
-                            <p class="role"><%= data.characters[i].role %></p>
-                            <img src="https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png" alt="roles"> 
+                        <div class="center">  
+                            <img src="<%= data.characters[i].roleSymbol %>" alt="role" > 
                         </div>
-                        
                         <div class="onMission"><%= data.characters[i].onMission %></div>
                         <a href="view">view</a>
                     </li>

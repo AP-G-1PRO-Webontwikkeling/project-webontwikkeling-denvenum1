@@ -10,7 +10,6 @@ async function fetchData() {
             
         }
         const data = await response.json();
-        console.log(data.characters[0])
         return data;
     } catch (error) {
         console.log(error);
