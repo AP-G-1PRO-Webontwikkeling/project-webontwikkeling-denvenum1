@@ -1,0 +1,37 @@
+<%- include('header.ejs') %>
+    <main>
+        <section>
+            <ul class="filter">
+                <li> <a href="">Name</a></li>
+                <li> <a href="">Birthdate</a></li>
+                <li> <a href="">Abilities</a></li>
+                <li> <a href="">Role</a></li>
+                <li> <a href="">Onmission</a></li>
+                <li> <a href="">Actions</a></li>
+            </ul>
+            <% for (let i = 0; i < data.characters.length; i++) { %>
+            <article >
+                <ul>
+                    <li>
+                        <div class="name">
+                            <img src="<%= data.characters[i].profilePicture %>" alt=""> 
+                            <h1><%= data.characters[i].name %></h1>
+                        </div>
+                        <p class="birthDate"><%= data.characters[i].birthdate %></p>
+                        <div class="abilities">   
+                            <p><%= data.characters[i].abilities[0] %></p>
+                            <p><%= data.characters[i].abilities[1] %></p>
+                            <p><%= data.characters[i].abilities[2] %></p>
+                            <p><%= data.characters[i].abilities[3] %></p>
+                        </div>
+                        <p class="role"><%= data.characters[i].role %></p>
+                        <div class="onMission"><%= data.characters[i].onMission %></div>
+                        <a href="view">view</a>
+                    </li>
+                </ul>
+            </article>
+            <% } %>
+        </section>
+    </main>
+<%- include('footer.ejs') %>
+

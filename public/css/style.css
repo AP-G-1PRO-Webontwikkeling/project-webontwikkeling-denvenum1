@@ -1,0 +1,105 @@
+/*--- algemeen ---*/
+html, body {
+    box-sizing: border-box;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+
+h1, h2, h3 {
+    color: var(--colorBlack);
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+h1 {
+    font-weight:bolder;
+}
+h2 {
+    letter-spacing: 3px;
+}
+p {
+    display: inline;
+    line-height: 1.3rem;
+    text-align: left;
+}
+a, footer p {
+    color: var(--colorBlack);
+}
+
+/*--- color ---*/
+:root {
+    --colorBlue: #02439D;
+    --colorLightBlue: #90B1FE;
+    --colorBlack: #1d1d1b;
+    --colorWhite: #fffffb;
+    --colorPurple: #41006A;
+    --colorLightPurple: #FFA9F6;
+}
+
+/*--- overzichtpagina van characters ---*/
+body {
+    border: black 2px solid;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+.filter {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    padding-top: 2rem;
+    justify-content: flex-start;
+}
+.filter li {
+    width: 20%;
+}
+main section article ul {
+    display: flex;
+    flex-direction:column;
+    
+}
+main section article ul img {
+    width: 75px;    
+}
+main section article ul li {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding-top: 2rem;
+}
+main section article ul li .name {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+   width: 19%;
+}
+main section article ul li a, .onMission, .birthDate,.role {
+    width: 20%;
+    
+}
+main section article ul li .abilities {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+main section article ul li .abilities p {
+    background-color: var(--colorLightBlue);
+    border-radius: 1rem;
+    border: 1px solid var(--colorBlue);
+    font-weight: bolder;
+    opacity: 0.8;
+    padding: 0.2rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: var(--colorLightBlue) 0px 7px 29px 0px;
+}
+main section article ul li .abilities p:nth-child(4) {
+    background-color: var(--colorLightPurple);
+    border: 1px solid var(--colorPurple);
+    box-shadow: var(--colorLightPurple) 0px 7px 29px 0px;
+}
+
