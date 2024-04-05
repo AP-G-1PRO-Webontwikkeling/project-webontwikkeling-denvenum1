@@ -40,58 +40,55 @@ a, footer p {
 
 /*--- overzichtpagina van characters ---*/
 body {
-    box-shadow: var(--colorBlack) 0px 3px 8px;
-    border-radius: 1rem;
-    margin: 2rem;
-    padding: 2rem;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: var(--colorBlack);
 }
-.filter {
-    display: flex;
-    flex-wrap: nowrap;
-    max-width: 100%;
-    padding-top: 2rem;
-    justify-content: flex-start;
-    border-bottom: var(--colorBlack) 1px solid;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
 }
-.filter li {
-    width: 15%;
-    padding: 2rem;
+th a {
+    color: #ffffff;
+    text-decoration: none;
 }
-main section article ul {
-    display: flex;
-    flex-direction:column;
-    
+table thead tr {
+    background-color: var(--colorRed);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
 }
-main section article ul img {
-    width: 75px;    
+table th,
+table td {
+    padding: 12px 15px;
 }
-main section article ul li {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: flex-start;
-    max-width: 100%;
-    padding: 2rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    margin: 0.5rem 0rem;
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
 }
-main section article ul li .name {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 15%;
-   align-items: flex-start
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
-main section article ul li a, .onMission, .center, .birthDate {
-    width: 15%;
+table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--colorRed);
 }
-
-main section article ul li .abilities {
+table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--colorRed);
+}
+.name {
     display: flex;
     flex-direction: column;
-    width: 15%;
-}
-main section article ul li .abilities p {
+    width: 121px;
+    align-items: center;
+ }
+.abilities p {
     background-color: var(--colorLightBlue);
     border-radius: 1rem;
     border: 1px solid var(--colorBlue);
@@ -103,13 +100,20 @@ main section article ul li .abilities p {
     margin-top: 0.5rem;
     box-shadow: var(--colorBlack) 0px 3px 8px;
 }
-main section article ul li .abilities p:nth-child(4) {
+.abilities p:nth-child(4) {
     background-color: var(--colorLightPurple);
     border: 1px solid var(--colorPurple);
     box-shadow: var(--colorBlack) 0px 3px 8px;
 }
 
-.center img {
-    width: 3rem;
+.abilities {
+    display: flex;
+    flex-direction: column;
 }
 
+.role{
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+    align-items: center;
+}
