@@ -4,13 +4,11 @@ html, body {
     color: var(--colorBlack);
     background-color: var(--colorWhite);
 }
-
 h1, h2, h3 {
     color: var(--colorBlack);
     letter-spacing: 1px;
     line-height: 2rem;
 }
-
 h1 {
     font-weight:bolder;
     color: var(--colorRed);
@@ -26,66 +24,97 @@ p {
 a, footer p {
     color: var(--colorBlack);
 }
-
 /*--- color ---*/
 :root {
     --colorBlue: #02439D;
     --colorLightBlue: #90B1FE;
     --colorBlack: #1d1d1b;
-    --colorWhite: #fffffb;
+    --colorWhite: #ffffff;
     --colorPurple: #41006A;
     --colorLightPurple: #FFA9F6;
     --colorRed: #F94554;
 }
-
-/*--- overzichtpagina van characters ---*/
 body {
-    font-family: Arial, sans-serif;
     margin: 20px;
     padding: 0;
-    background-color: #f4f4f4;
     color: var(--colorBlack);
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
+/*header*/
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
-th a {
-    color: #ffffff;
+header nav ul {
+    display: flex;
+    flex-flow: nowrap;
+    padding-top: 1.8rem;
+    gap: 1rem;
+}
+header nav a {
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
     text-decoration: none;
+    color: var(--colorRed);
+    padding-bottom: 1.25rem;
+    position: relative;
+    opacity: 0.75;
+    height: 15px;
+}
+header nav a:hover {
+    opacity: 1;
+}
+header nav > ul > li > a::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: var(--colorRed);
+}
+header nav > ul > li > a::before {
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+}
+header nav > ul > li > a:hover::before {
+    height: 5px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--- overzichtpagina van characters ---*/
+table {
+    margin-top: 1rem;
+    width: 100%;
 }
 table thead tr {
     background-color: var(--colorRed);
-    color: #ffffff;
     text-align: left;
     font-weight: bold;
+}
+table thead tr th:nth-child(3) {
+    text-align: center;
+}
+table thead tr th a {
+    color: var(--colorWhite);
 }
 table th,
 table td {
     padding: 12px 15px;
 }
 table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-table tbody tr:last-of-type {
-    border-bottom: 2px solid var(--colorRed);
-}
-table tbody tr.active-row {
-    font-weight: bold;
-    color: var(--colorRed);
+    border-bottom: 1px solid var(--colorRed);
+
 }
 .name {
     display: flex;
     flex-direction: column;
-    width: 121px;
+    width: 100px;
     align-items: center;
  }
 .abilities p {
@@ -93,27 +122,27 @@ table tbody tr.active-row {
     border-radius: 1rem;
     border: 1px solid var(--colorBlue);
     font-weight: bolder;
-    opacity: 0.8;
     padding: 0.2rem;
     margin-right: 1rem;
     padding-left: 1rem;
     margin-top: 0.5rem;
     box-shadow: var(--colorBlack) 0px 3px 8px;
+    text-align: center;
 }
 .abilities p:nth-child(4) {
     background-color: var(--colorLightPurple);
     border: 1px solid var(--colorPurple);
     box-shadow: var(--colorBlack) 0px 3px 8px;
 }
-
 .abilities {
     display: flex;
     flex-direction: column;
+   
 }
-
 .role{
     display: flex;
     flex-direction: column;
-    width: 52px;
+    width: 40px;
+    gap: 2rem;
     align-items: center;
 }

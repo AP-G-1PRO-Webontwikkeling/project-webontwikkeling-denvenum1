@@ -1,45 +1,44 @@
 <%- include('header.ejs') %>
     <main>
-    <table>
-        <thead>
-            <tr>
-                <th><a href="">Name</a></th>
-                <th><a href="">Birthdate</a></th>
-                <th><a href="">Abilities</a></th>
-                <th><a href="">Role</a></th>
-                <th><a href="">Onmission</a></th>
-                <th><a href="">Actions</a></th>
-            </tr>
-        </thead>
-        <tbody>
-            <% for (let i = 0; i < data.characters.length; i++) { %>
+        <input type="text" value="" >
+        <table>
+            <thead>
                 <tr>
-                    <td>
-                        <div class="name">
-                            <h1><%= data.characters[i].name %></h1>
-                            <img src="<%= data.characters[i].profilePicture %>" alt=""> 
-                        </div>
-                    </td>
-                    <td><%= data.characters[i].birthdate %></td>
-                    <td class="abilities">
-                        <p><%= data.characters[i].abilities[0] %></p>
-                        <p><%= data.characters[i].abilities[1] %></p>
-                        <p><%= data.characters[i].abilities[2] %></p>
-                        <p><%= data.characters[i].abilities[3] %></p>
-                    </td>
-                    <td>
-                        <div class="role">
-                            <p><%= data.characters[i].role %></p>
-                            <img src="<%= data.characters[i].roleSymbol %>" alt="role" class="role"> </td>
-                        </div>
-                    <td><%= data.characters[i].onMission %></td>
-                    <td><a href="view">view</a></td>
+                    <th><a href="">Name</a></th>
+                    <th><a href="">Birthdate</a></th>
+                    <th><a href="">Abilities</a></th>
+                    <th><a href="">Role</a></th>
+                    <th><a href="">Onmission</a></th>
+                    <th><a href="">Actions</a></th>
                 </tr>
-            <% } %>
-        </tbody>
-    </table>
-
-        
+            </thead>
+            <tbody>
+                <% for (let i = 0; i < data.characters.length; i++) { %>
+                    <tr>
+                        <td>
+                            <div class="name">
+                                <h1><%= data.characters[i].name %></h1>
+                                <img src="<%= data.characters[i].profilePicture %>" alt=""> 
+                            </div>
+                        </td>
+                        <td><%= data.characters[i].birthdate %></td>
+                        <td class="abilities">
+                            <p><%= data.characters[i].abilities[0] %></p>
+                            <p><%= data.characters[i].abilities[1] %></p>
+                            <p><%= data.characters[i].abilities[2] %></p>
+                            <p><%= data.characters[i].abilities[3] %></p>
+                        </td>
+                        <td>
+                            <div class="role">
+                                <p><%= data.characters[i].role %></p>
+                                <img src="<%= data.characters[i].roleSymbol %>" alt="role" class="role"> </td>
+                            </div>
+                        <td><%= data.characters[i].onMission %></td>
+                        <td><a href="view">view</a></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
     </main>
 <%- include('footer.ejs') %>
 
