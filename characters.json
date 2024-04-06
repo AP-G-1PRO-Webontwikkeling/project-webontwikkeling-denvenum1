@@ -1,11 +1,10 @@
-{
-    "characters": [
+[
     {
         "id": "char-001",
         "name": "Phoenix",
         "description": "Phoenix is a fire-power agent who utilizes heat to turn fights in his favor wherever he goes.",
         "age": 30,
-        "onMission": true,
+        "available": true,
         "birthdate": "1994-05-15",
         "country": "United Kingdom",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/PhoenixPortrait.webp",
@@ -24,7 +23,7 @@
         "name": "Jett",
         "description": "Jett is an agile agent who uses her skills to evade and surprise enemies.",
         "age": 25,
-        "onMission": true,
+        "available": true,
         "birthdate": "1999-09-20",
         "country": "South Korea",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/JettPortrait.webp",
@@ -43,7 +42,7 @@
         "name": "Sova",
         "description": "Sova is a recon agent who uses his bow and arrow to track down and neutralize enemies.",
         "age": 28,
-        "onMission": true,
+        "available": true,
         "birthdate": "1996-11-10",
         "country": "Russia",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SovaPortrait.webp",
@@ -62,7 +61,7 @@
         "name": "Breach",
         "description": "Breach is an initiator agent who shakes the ground and blinds enemies with his powerful attacks.",
         "age": 35,
-        "onMission": true,
+        "available": true,
         "birthdate": "1989-03-25",
         "country": "Sweden",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/BreachPortrait.webp",
@@ -81,7 +80,7 @@
         "name": "Omen",
         "description": "Omen is a shadowy agent who shrouds enemies in darkness and teleports to evade opposition.",
         "age": 29,
-        "onMission": true,
+        "available": true,
         "birthdate": "1993-07-18",
         "country": "Unknown",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/OmenPortrait.webp",
@@ -100,7 +99,7 @@
         "name": "Cypher",
         "description": "Cypher is a defensive agent who keeps an eye on enemies and sets traps to protect his teams.",
         "age": 40,
-        "onMission": true,
+        "available": true,
         "birthdate": "1984-12-02",
         "country": "Morocco",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/CypherPortrait.webp",
@@ -119,7 +118,7 @@
         "name": "Killjoy",
         "description": "Killjoy is a defensive agent who uses automated turrets and gadgets to defend areas.",
         "age": 24,
-        "onMission": true,
+        "available": true,
         "birthdate": "2000-08-29",
         "country": "Germany",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/KilljoyPortrait.webp",
@@ -138,7 +137,7 @@
         "name": "Viper",
         "description": "Viper is a chemical agent who uses toxic substances to control areas and weaken enemies.",
         "age": 33,
-        "onMission": true,
+        "available": true,
         "birthdate": "1988-06-14",
         "country": "United States",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/ViperPortrait.webp",
@@ -157,7 +156,7 @@
         "name": "Reyna",
         "description": "Reyna is a vampire agent who defeats enemies to strengthen her powers and dominate the battle.",
         "age": 27,
-        "onMission": true,
+        "available": true,
         "birthdate": "1997-11-09",
         "country": "Mexico",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/ReynaPortrait.webp",
@@ -176,7 +175,7 @@
         "name": "Skye",
         "description": "Skye is a nature-bound agent who summons animals to aid her in tracking down and neutralizing enemies.",
         "age": 31,
-        "onMission": true,
+        "available": false,
         "birthdate": "1993-02-08",
         "country": "Australia",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
@@ -185,10 +184,9 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-005",
-      "name": "Renegades",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
-      "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
         }
     }
-    ]
-}  
+]

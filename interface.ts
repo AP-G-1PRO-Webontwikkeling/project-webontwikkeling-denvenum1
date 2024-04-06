@@ -3,8 +3,8 @@ export interface Characters {
     name:           string;
     description:    string;
     age:            number;
-    onMission:      boolean;
-    birthdate:      string;
+    available:      boolean;
+    birthdate:      number;
     country:        string;
     profilePicture: string;
     abilities:      string[];
