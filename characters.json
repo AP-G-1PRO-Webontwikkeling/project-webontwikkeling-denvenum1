@@ -2,7 +2,7 @@
     {
         "id": "char-001",
         "name": "Phoenix",
-        "description": "Phoenix is a fire-power agent who utilizes heat to turn fights in his favor wherever he goes.",
+        "description": "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
         "age": 30,
         "available": true,
         "birthdate": "1994-05-15",
@@ -13,7 +13,7 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-001",
-            "name": "Sentinels",
+            "name": "Sentines",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
             "players": ["Phoenix", "Jett", "Sova", "Breach", "Omen"]
         }
@@ -21,7 +21,7 @@
     {
         "id": "char-002",
         "name": "Jett",
-        "description": "Jett is an agile agent who uses her skills to evade and surprise enemies.",
+        "description": "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies up before they even know what hit them.",
         "age": 25,
         "available": true,
         "birthdate": "1999-09-20",
@@ -31,7 +31,7 @@
         "role": "duelist",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
-            "id": "teams-001",
+            "id": "teams-002",
             "name": "Sentinels",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
             "players": ["Phoenix", "Jett", "Sova", "Breach", "Omen"]
@@ -40,7 +40,7 @@
     {
         "id": "char-003",
         "name": "Sova",
-        "description": "Sova is a recon agent who uses his bow and arrow to track down and neutralize enemies.",
+        "description": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
         "age": 28,
         "available": false,
         "birthdate": "1996-11-10",
@@ -50,7 +50,7 @@
         "role": "initiator",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
-            "id": "teams-004",
+            "id": "teams-003",
             "name": "Guardians",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
             "players": ["Sova", "Cypher", "Brimstone", "Phoenix", "Sage"]
@@ -59,7 +59,7 @@
     {
         "id": "char-004",
         "name": "Breach",
-        "description": "Breach is an initiator agent who shakes the ground and blinds enemies with his powerful attacks.",
+        "description": "The bionic Swede Breach fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
         "age": 35,
         "available": true,
         "birthdate": "1989-03-25",
@@ -69,7 +69,7 @@
         "role": "initiator",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
-            "id": "teams-002",
+            "id": "teams-004",
             "name": "Strikers",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/StrikersLogo.jpg?raw=true",
             "players": ["Breach", "Sage", "Raze", "Yoru", "Cypher"]
@@ -78,7 +78,7 @@
     {
         "id": "char-005",
         "name": "Omen",
-        "description": "Omen is a shadowy agent who shrouds enemies in darkness and teleports to evade opposition.",
+        "description": "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to uncover where he might strike next.",
         "age": 29,
         "available": false,
         "birthdate": "1993-07-18",
@@ -88,7 +88,7 @@
         "role": "controller",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
-            "id": "teams-003",
+            "id": "teams-005",
             "name": "Titans",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/TitansLogo.jpg?raw=true",
             "players": ["Omen", "Viper", "Reyna", "Killjoy", "Skye"]
@@ -97,7 +97,7 @@
     {
         "id": "char-006",
         "name": "Cypher",
-        "description": "Cypher is a defensive agent who keeps an eye on enemies and sets traps to protect his teams.",
+        "description": "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.",
         "age": 40,
         "available": true,
         "birthdate": "1984-12-02",
@@ -107,7 +107,7 @@
         "role": "sentinel",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
-            "id": "teams-004",
+            "id": "teams-006",
             "name": "Guardians",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
             "players": ["Sova", "Cypher", "Brimstone", "Phoenix", "Sage"]
@@ -116,7 +116,7 @@
     {
         "id": "char-007",
         "name": "Killjoy",
-        "description": "Killjoy is a defensive agent who uses automated turrets and gadgets to defend areas.",
+        "description": "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't take her enemies out, the debuff her robots provide will make short work of them.",
         "age": 24,
         "available": true,
         "birthdate": "2000-08-29",
@@ -126,7 +126,7 @@
         "role": "sentinal",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
-            "id": "teams-006",
+            "id": "teams-007",
             "name": "Outlaws",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/OutlawsLogo.jpg?raw=true",
             "players": ["Killjoy", "Raze", "Sova", "Omen", "Yoru"]
@@ -135,7 +135,7 @@
     {
         "id": "char-008",
         "name": "Viper",
-        "description": "Viper is a chemical agent who uses toxic substances to control areas and weaken enemies.",
+        "description": "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
         "age": 33,
         "available": false,
         "birthdate": "1988-06-14",
@@ -145,7 +145,7 @@
         "role": "controller",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
-            "id": "teams-005",
+            "id": "teams-008",
             "name": "Renegades",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
             "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
@@ -154,7 +154,7 @@
     {
         "id": "char-009",
         "name": "Reyna",
-        "description": "Reyna is a vampire agent who defeats enemies to strengthen her powers and dominate the battle.",
+        "description": "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance.",
         "age": 27,
         "available": true,
         "birthdate": "1997-11-09",
@@ -164,7 +164,7 @@
         "role": "duelist",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
-            "id": "teams-005",
+            "id": "teams-009",
             "name": "Renegades",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
             "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
@@ -173,7 +173,7 @@
     {
         "id": "char-010",
         "name": "Skye",
-        "description": "Skye is a nature-bound agent who summons animals to aid her in tracking down and neutralizing enemies.",
+        "description": "Hailing from Australia, Skye and her band of beasts trailblaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
         "age": 31,
         "available": false,
         "birthdate": "1993-02-08",
@@ -183,7 +183,7 @@
         "role": "initiator",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
-            "id": "teams-005",
+            "id": "teams-010",
             "name": "Renegades",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
             "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]

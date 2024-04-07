@@ -40,6 +40,9 @@ body {
     color: var(--colorBlack);
 }
 /*header*/
+header {
+    margin-bottom: 2rem;
+}
 header nav {
     display: flex;
     flex-direction: column;
@@ -109,7 +112,6 @@ table td {
 }
 table tbody tr {
     border-bottom: 1px solid var(--colorRed);
-
 }
 .name {
     display: flex;
@@ -118,26 +120,25 @@ table tbody tr {
     align-items: center;
  }
 .abilities p {
-    background-color: var(--colorLightBlue);
-    border-radius: 1rem;
-    border: 1px solid var(--colorBlue);
-    font-weight: bolder;
+    background-color: #b2defc;
+    border: 3px solid #0076c5;
+    border-radius: 0.3rem;
+    font-weight: 500;
     padding: 0.2rem;
     margin-right: 1rem;
     padding-left: 1rem;
     margin-top: 0.5rem;
-    box-shadow: var(--colorBlack) 0px 3px 8px;
+    box-shadow: #74c2f6 0px 3px 8px;
     text-align: center;
 }
 .abilities p:nth-child(4) {
-    background-color: var(--colorLightPurple);
-    border: 1px solid var(--colorPurple);
-    box-shadow: var(--colorBlack) 0px 3px 8px;
+    background-color: #f1aef8;
+    border: 3px solid #dd00b8;
+    box-shadow: #ee80f8 0px 3px 8px;
 }
 .abilities {
     display: flex;
     flex-direction: column;
-   
 }
 .role{
     display: flex;
@@ -145,4 +146,39 @@ table tbody tr {
     width: 40px;
     gap: 2rem;
     align-items: center;
+}
+/*--- cards ---*/
+.characters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;  
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    box-shadow: 0 4px 8px 0 var(--colorRed);
+    transition: 0.3s;
+    width: 25%;
+    padding-bottom: 2rem;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 var(--colorRed);
+}
+.container {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+/*--- mediaquerries ---*/
+@media screen and (max-width: 1120px) {
+    .card {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .card {
+        width: 100%;
+    }
 }
