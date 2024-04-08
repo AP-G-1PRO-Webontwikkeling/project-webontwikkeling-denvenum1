@@ -4,7 +4,7 @@ export interface Characters {
     description:    string;
     age:            number;
     available:      boolean;
-    birthdate:      number;
+    birthdate:      string;
     country:        string;
     profilePicture: string;
     abilities:      string[];

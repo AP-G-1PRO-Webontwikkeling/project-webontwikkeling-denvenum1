@@ -23,7 +23,7 @@ app.use(express.static("public"))
 
 app.get("/", async (req, res) => {
     const data = await fetchData();
-    const q: string = req.query.q?.toString() ?? "";
+    const q : string = req.query.q?.toString() ?? "";
     const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
     const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
     
@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
         if (sortField === "name") {
             return sortDirection === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
         } else if (sortField === "birthdate") {
-            return sortDirection === "asc" ? a.birthdate - b.birthdate : b.birthdate - a.birthdate;
+            return sortDirection === "asc" ? a.birthdate.localeCompare(b.birthdate) : b.birthdate.localeCompare(a.birthdate);
         } else if (sortField === "role") {
             return sortDirection === "asc" ? a.role.localeCompare(b.role) : b.role.localeCompare(a.role);
         } else if (sortField === "available") {
@@ -46,12 +46,12 @@ app.get("/", async (req, res) => {
     });
 
     const sortFields = [
-        { value: 'name', text: 'name', selected: sortField === 'name' ? 'selected' : '' },
-        { value: 'birthdate', text: 'birthdate', selected: sortField === 'birthdate' ? 'selected' : ''},
-        { text: "abilities"},
-        { value: 'role', text: 'role', selected: sortField === 'role' ? 'selected' : ''},
-        { value: 'available', text: 'available', selected: sortField === 'available' ? 'selected' : ''},
-        { text: 'view'}
+        { value: 'name', text: 'NAME', selected: sortField === 'name' ? 'selected' : '' },
+        { value: 'birthdate', text: 'BIRTDATE', selected: sortField === 'birthdate' ? 'selected' : ''},
+        { text: "ABILITIES"},
+        { value: 'role', text: 'ROLE', selected: sortField === 'role' ? 'selected' : ''},
+        { value: 'available', text: 'AVAILABLE', selected: sortField === 'available' ? 'selected' : ''},
+        { text: 'VIEW'}
     ];
 
     const sortDirections = [
@@ -80,7 +80,19 @@ app.get("/cards", async (req,res)=>{
     res.render("cards",{
         characters: data
     });
-})
+});
+
+app.get("/characters/:id", async (req, res) => {
+    const data = await fetchData();
+    const characterId = req.params.id;
+    const characters: Characters[] = data.filter((character: Characters) => character.id === characterId);
+    if (!characters) {
+        return res.status(404).send("Character not found");
+    }
+        res.render("cards", { characters: characters });
+});
+
+
 app.listen(app.get("port"), async()=>{
     console.log("server http://localhost:" + app.get("port"))
 })

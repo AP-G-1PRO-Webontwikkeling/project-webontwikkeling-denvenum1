@@ -1,9 +1,9 @@
 <%- include('header.ejs') %>
     <main>
-        <form action="/" method="get">
-            <label for="search">Search for a name:</label>
-            <input type="text" id="search" name="q" value="<%= q %>">
-            <button type="submit">Search</button>
+        <form action="/" method="get" class="search">
+            <img src="/assets/imgs/magnifying-glass-solid.svg" alt="glass" width="33">
+            <input type="text" id="search" name="q" value="<%= q %>" class="searchBar" placeholder="Search for characters">
+            <button type="submit"></button>
         </form>
         <table>
             <thead>
@@ -42,7 +42,7 @@
                                 <img src="<%= character.roleSymbol %>" alt="role" class="role"> </td>
                             </div>
                         <td><%= character.available %></td>
-                        <td><a href="view">view</a></td>
+                        <td><a href="/characters/<%= character.id %>">view</a></td>
                     </tr>
                 <% } %>
             </tbody>

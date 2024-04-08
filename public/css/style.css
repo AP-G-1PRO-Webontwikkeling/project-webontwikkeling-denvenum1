@@ -100,11 +100,14 @@ table thead tr {
     text-align: left;
     font-weight: bold;
 }
-table thead tr th:nth-child(3) {
-    text-align: center;
-}
+
 table thead tr th a {
     color: var(--colorWhite);
+}
+table thead tr th:nth-child(3) a, 
+table thead tr th:nth-child(6) a {
+    pointer-events: none;
+    cursor: default;
 }
 table th,
 table td {
@@ -121,20 +124,25 @@ table tbody tr {
  }
 .abilities p {
     background-color: #b2defc;
-    border: 3px solid #0076c5;
+    border: 1px solid #0076c5;
     border-radius: 0.3rem;
     font-weight: 500;
-    padding: 0.2rem;
-    margin-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 0.3rem;
     margin-top: 0.5rem;
     box-shadow: #74c2f6 0px 3px 8px;
-    text-align: center;
+    font-size: 10px;
+    max-width: 9rem;
 }
 .abilities p:nth-child(4) {
     background-color: #f1aef8;
-    border: 3px solid #dd00b8;
+    border: 1px solid #dd00b8;
     box-shadow: #ee80f8 0px 3px 8px;
+}
+.abilities p:hover {
+    box-shadow: 0 8px 16px 0 #74c2f6;
+}
+.abilities p:nth-child(4):hover {
+    box-shadow: 0 8px 16px 0 #ee80f8;
 }
 .abilities {
     display: flex;
@@ -170,6 +178,35 @@ table tbody tr {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+.container .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container .abilities p {
+    width: 50%;
+}
+.searchBar {
+    width: 15%;
+    padding-left: 0.5rem;
+    margin: 3rem 1.1rem 0 0;
+    border-radius: 0.5rem;
+    border: var(--colorRed) solid 1px;
+    height: 2.3rem;
+}
+.searchBar:focus {
+    box-shadow: 
+    0px 1px 2px 0px var(--colorRed),
+    1px 2px 4px 0px var(--colorRed),
+    2px 4px 8px 0px var(--colorRed),
+    2px 4px 16px 0px var(--colorRed);
+}
+.search {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 /*--- mediaquerries ---*/
 @media screen and (max-width: 1120px) {
