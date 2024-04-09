@@ -8,6 +8,7 @@
         "birthdate": "1994-05-15",
         "country": "United Kingdom",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/PhoenixPortrait.webp",
+        "avatar": "",
         "abilities": ["Blaze", "Curveball", "Hot Hands", "Run It Back"],
         "role": "duelist",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
@@ -15,7 +16,7 @@
             "id": "teams-001",
             "name": "Sentines",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
-            "players": ["Phoenix", "Jett", "Sova", "Breach", "Omen"]
+            "founded": 1998
         }
     },
     {
@@ -27,6 +28,7 @@
         "birthdate": "1999-09-20",
         "country": "South Korea",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/JettPortrait.webp",
+        "avatar": "",
         "abilities": ["Cloudburst", "Updraft", "Tailwind", "Blade Storm"],
         "role": "duelist",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
@@ -34,7 +36,7 @@
             "id": "teams-002",
             "name": "Sentinels",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
-            "players": ["Phoenix", "Jett", "Sova", "Breach", "Omen"]
+            "founded": 1998
         }
     },
     {
@@ -46,6 +48,7 @@
         "birthdate": "1996-11-10",
         "country": "Russia",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SovaPortrait.webp",
+        "avatar": "",
         "abilities": ["Shock Bolt", "Owl Drone", "Recon Bolt", "Hunter's Fury"],
         "role": "initiator",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
@@ -53,7 +56,7 @@
             "id": "teams-003",
             "name": "Guardians",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
-            "players": ["Sova", "Cypher", "Brimstone", "Phoenix", "Sage"]
+            "founded": 1998
         }
     },
     {
@@ -65,6 +68,7 @@
         "birthdate": "1989-03-25",
         "country": "Sweden",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/BreachPortrait.webp",
+        "avatar": "",
         "abilities": ["Aftershock", "Flashpoint", "Fault Line", "Rolling Thunder"],
         "role": "initiator",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
@@ -72,7 +76,7 @@
             "id": "teams-004",
             "name": "Strikers",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/StrikersLogo.jpg?raw=true",
-            "players": ["Breach", "Sage", "Raze", "Yoru", "Cypher"]
+            "founded": 1998
         }
     },
     {
@@ -84,6 +88,7 @@
         "birthdate": "1993-07-18",
         "country": "Unknown",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/OmenPortrait.webp",
+        "avatar": "",
         "abilities": ["Shrouded Step", "Paranoia", "Dark Cover", "From the Shadows"],
         "role": "controller",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
@@ -91,7 +96,7 @@
             "id": "teams-005",
             "name": "Titans",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/TitansLogo.jpg?raw=true",
-            "players": ["Omen", "Viper", "Reyna", "Killjoy", "Skye"]
+            "founded": 1998
         }
     },
     {
@@ -103,6 +108,7 @@
         "birthdate": "1984-12-02",
         "country": "Morocco",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/CypherPortrait.webp",
+        "avatar": "",
         "abilities": ["Trapwire", "Cyber Cage", "Spycam", "Neural Theft"],
         "role": "sentinel",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
@@ -110,7 +116,7 @@
             "id": "teams-006",
             "name": "Guardians",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
-            "players": ["Sova", "Cypher", "Brimstone", "Phoenix", "Sage"]
+            "founded": 1998
         }
     }, 
     {
@@ -122,14 +128,15 @@
         "birthdate": "2000-08-29",
         "country": "Germany",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/KilljoyPortrait.webp",
+        "avatar": "",
         "abilities": ["Alarmbot", "Turret", "Nanoswarm", "Lockdown"],
-        "role": "sentinal",
+        "role": "sentinel",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-007",
             "name": "Outlaws",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/OutlawsLogo.jpg?raw=true",
-            "players": ["Killjoy", "Raze", "Sova", "Omen", "Yoru"]
+            "founded": 1998
         }
     },
     {
@@ -141,6 +148,7 @@
         "birthdate": "1988-06-14",
         "country": "United States",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/ViperPortrait.webp",
+        "avatar": "",
         "abilities": ["Snakebite", "Poison Cloud", "Toxic Screen", "Viper's Pit"],
         "role": "controller",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
@@ -148,7 +156,7 @@
             "id": "teams-008",
             "name": "Renegades",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
-            "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
+            "founded": 1998
         }
     },
     {
@@ -160,6 +168,7 @@
         "birthdate": "1997-11-09",
         "country": "Mexico",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/ReynaPortrait.webp",
+        "avatar": "",
         "abilities": ["Dismiss", "Devour", "Leer", "Empress"],
         "role": "duelist",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
@@ -167,7 +176,7 @@
             "id": "teams-009",
             "name": "Renegades",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
-            "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
+            "founded": 1998
         }
     },
     {
@@ -179,6 +188,7 @@
         "birthdate": "1993-02-08",
         "country": "Australia",
         "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
         "abilities": ["Regrowth", "Trailblazer", "Guiding Light", "Seekers"],
         "role": "initiator",
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
@@ -186,7 +196,167 @@
             "id": "teams-010",
             "name": "Renegades",
             "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
-            "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-011",
+        "name": "Brimstone",
+        "description": "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
+        "age": 45,
+        "available": true,
+        "birthdate": "1977-03-07",
+        "country": "U.S.A",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"],
+        "role": "controller",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
+        "teams": {
+            "id": "teams-011",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-012",
+        "name": "Sage",
+        "description": "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off forceful assaults, she provides a calm center to a hellish battlefield.",
+        "age": 22,
+        "available": true,
+        "birthdate": "1999-12-12",
+        "country": "China",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Barrier Orb", "Slow Orb ", "Healing Orb", "Resurrection"],
+        "role": "sentinel",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
+        "teams": {
+            "id": "teams-012",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-013",
+        "name": "Raze",
+        "description": "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of boom.",
+        "age": 28,
+        "available": false,
+        "birthdate": "1994-03-04",
+        "country": "Brazil",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Boom Bot", "Blast Pack", "Paint Shells", "Showstopper"],
+        "role": "duelist",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
+        "teams": {
+            "id": "teams-013",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-014",
+        "name": "Yoru",
+        "description": "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
+        "age": 24,
+        "available": false,
+        "birthdate": "1997-09-22",
+        "country": "Japan",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Fakeout", "Blindside", "Gatecrash", "Dimensional Drift"],
+        "role": "duelist",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
+        "teams": {
+            "id": "teams-014",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-015",
+        "name": "Astra",
+        "description": "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.",
+        "age": 23,
+        "available": true,
+        "birthdate": "1998-06-15",
+        "country": "Ghana",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Gravity Well", "Nova Pulse", "Nebula/Dissipate", "Cosmic Divide"],
+        "role": "controller",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
+        "teams": {
+            "id": "teams-015",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-016",
+        "name": "Kay/0",
+        "description": "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities dismantles his opponents capacity to fight back, securing him and his allies the ultimate edge.",
+        "age": 22,
+        "available": false,
+        "birthdate": "2000-01-31",
+        "country": "Cybernetic",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["FRAG/ment", "FLASH/drive", "ZERO/point", "NULL/cmd"],
+        "role": "initiator",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
+        "teams": {
+            "id": "teams-016",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-017",
+        "name": "Neon",
+        "description": "Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard then strikes them down quicker than lightning.",
+        "age": 26,
+        "available": false,
+        "birthdate": "1995-11-18",
+        "country": "Philippines",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Fast Lane", "Relay Bolt", "High Gear", "Overdrive"],
+        "role": "duelist",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
+        "teams": {
+            "id": "teams-017",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
+        }
+    },
+    {
+        "id": "char-018",
+        "name": "Chamber",
+        "description": "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
+        "age": 28,
+        "available": true,
+        "birthdate": "1993-08-29",
+        "country": "France",
+        "profilePicture": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/SkyePortrait.webp",
+        "avatar": "",
+        "abilities": ["Trademark", "Headhunter", "Rendezvous", "Tour De Force"],
+        "role": "sentinel",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
+        "teams": {
+            "id": "teams-018",
+            "name": "Renegades",
+            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "founded": 1998
         }
     }
 ]

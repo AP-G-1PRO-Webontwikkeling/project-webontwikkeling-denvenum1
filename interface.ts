@@ -7,6 +7,7 @@ export interface Characters {
     birthdate:      string;
     country:        string;
     profilePicture: string;
+    avatar:         string;
     abilities:      string[];
     role:           string;
     roleSymbol:     string;
@@ -17,5 +18,5 @@ export interface Teams {
     id:      string;
     name:    string;
     logo:    string;
-    players: string[];
+    founded: number;
 }
