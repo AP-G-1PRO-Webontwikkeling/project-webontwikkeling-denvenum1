@@ -116,12 +116,21 @@ table td {
 table tbody tr {
     border-bottom: 1px solid var(--colorRed);
 }
-.name {
+.nameTeams {
     display: flex;
     flex-direction: column;
-    width: 100px;
     align-items: center;
- }
+    width: 26%;
+}
+.nameCharacters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+.nameTeams img {
+    width: 100px;
+}
 .abilities p {
     background-color: #b2defc;
     border: 1px solid #0076c5;
@@ -189,7 +198,7 @@ table tbody tr {
     width: 50%;
 }
 .searchBar {
-    width: 15%;
+    width: 250px;
     padding-left: 0.5rem;
     margin: 3rem 1.1rem 0 0;
     border-radius: 0.5rem;

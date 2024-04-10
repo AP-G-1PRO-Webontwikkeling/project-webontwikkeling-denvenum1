@@ -11,18 +11,12 @@
                 <% for (let character of characters) { %>
                     <tr>
                         <td>
-                            <div class="name">
+                            <div class="nameTeams">
                                 <h1><%= character.teams.name %></h1>
                                 <img src="<%= character.teams.logo %>" alt=""> 
                             </div>
                         </td>
-                        <td class="players">
-                            <p><%= character.teams.players[0] %></p>
-                            <p><%= character.teams.players[1] %></p>
-                            <p><%= character.teams.players[2] %></p>
-                            <p><%= character.teams.players[3] %></p>
-                            <p><%= character.teams.players[4] %></p>
-                        </td>
+                        <td><%= character.teams.founded %></td>
                     </tr>
                 <% } %>
             </tbody>
