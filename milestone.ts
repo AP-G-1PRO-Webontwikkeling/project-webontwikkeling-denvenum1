@@ -92,6 +92,15 @@ app.get("/characters/:id", async (req, res) => {
         res.render("cards", { characters: characters });
 });
 
+app.get("/teams/:id", async (req, res) => {
+    const data = await fetchData();
+    const characterId = req.params.id;
+    const characters: Characters[] = data.filter((character: Characters) => character.id === characterId);
+    if (!characters) {
+        return res.status(404).send("Character not found");
+    }
+        res.render("teamCards", { characters: characters });
+});
 
 app.listen(app.get("port"), async()=>{
     console.log("server http://localhost:" + app.get("port"))

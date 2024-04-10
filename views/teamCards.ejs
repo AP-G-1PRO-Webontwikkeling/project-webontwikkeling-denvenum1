@@ -1,0 +1,15 @@
+<%-include("header.ejs") %>
+<main>
+    <section class="characters">
+        <% for (let character of characters) { %>
+        <article class="card">
+            <img src="<%= character.teams.logo %>" alt="logo" style="width:100%">
+            <div class="container">
+                <h1><%= character.teams.name %></h1> 
+                <p>founded: <%= character.teams.founded %></p> 
+            </div>
+        </article>
+        <% } %>
+    </section>
+</main>
+<%- include("footer.ejs") %>
