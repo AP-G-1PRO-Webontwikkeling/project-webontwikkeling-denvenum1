@@ -14,8 +14,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-001",
-            "name": "Sentines",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
+            "name": "The Headshot Heroes",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/The-Headshot-Heroes.webp",
             "founded": 1998
         }
     },
@@ -34,8 +34,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-002",
-            "name": "Sentinels",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
+            "name": "Tactical Trolls",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Tactical-Trolls.webp",
             "founded": 1998
         }
     },
@@ -54,8 +54,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-003",
-            "name": "Guardians",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
+            "name": "Frag Fiends",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Frag-Fiends.webp",
             "founded": 1998
         }
     },
@@ -74,8 +74,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-004",
-            "name": "Strikers",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/StrikersLogo.jpg?raw=true",
+            "name": "Precision Pandas",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Precision-Pandas.webp",
             "founded": 1998
         }
     },
@@ -94,8 +94,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
             "id": "teams-005",
-            "name": "Titans",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/TitansLogo.jpg?raw=true",
+            "name": "Sneaky Snipers",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sneaky-Snipers.webp",
             "founded": 1998
         }
     },
@@ -114,8 +114,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-006",
-            "name": "Guardians",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
+            "name": "Bombastic Bananas",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Bombastic-Bananas.webp",
             "founded": 1998
         }
     }, 
@@ -134,8 +134,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-007",
-            "name": "Outlaws",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/OutlawsLogo.jpg?raw=true",
+            "name": "Victory Vipers",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Victory-Vipers.webp",
             "founded": 1998
         }
     },
@@ -154,8 +154,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
             "id": "teams-008",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Aim Assist Assassins",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Aim-Assist-Assassins.webp",
             "founded": 1998
         }
     },
@@ -174,8 +174,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-009",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Bulletproof Buffoons",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Bulletproof-Buffoons.webp",
             "founded": 1998
         }
     },
@@ -194,8 +194,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-010",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Flashbang Falcons",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Flashbang-Falcons.webp",
             "founded": 1998
         }
     },
@@ -214,8 +214,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-011",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "No-Scope Ninjas",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/No-Scope-Ninjas.webp",
             "founded": 1998
         }
     },
@@ -234,8 +234,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-012",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Lethal Llamas",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Lethal-Llamas.webp",
             "founded": 1998
         }
     },
@@ -254,8 +254,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-013",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "C4 Commandos",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/C4-Commandos.webp",
             "founded": 1998
         }
     },
@@ -274,8 +274,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-014",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Recoil Rebels",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Recoil-Rebels.webp",
             "founded": 1998
         }
     },
@@ -294,8 +294,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
             "id": "teams-015",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Boom Boom Brigade",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Boom-Boom-Brigade.webp",
             "founded": 1998
         }
     },
@@ -314,8 +314,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
         "teams": {
             "id": "teams-016",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Tactical Toasters",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Tactical-Toasters.webp",
             "founded": 1998
         }
     },
@@ -334,8 +334,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png",
         "teams": {
             "id": "teams-017",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "KittyFlame Serpent",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/KittyFlame-Serpent.webp",
             "founded": 1998
         }
     },
@@ -354,8 +354,8 @@
         "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png",
         "teams": {
             "id": "teams-018",
-            "name": "Renegades",
-            "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
+            "name": "Draconic Purrfect",
+            "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Draconic-Purrfect.webp",
             "founded": 1998
         }
     }
