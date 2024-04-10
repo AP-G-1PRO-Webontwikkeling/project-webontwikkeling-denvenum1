@@ -19,4 +19,7 @@ export interface Teams {
     name:    string;
     logo:    string;
     founded: number;
+    motto: string;
+    country: string;
+    captain: string;
 }

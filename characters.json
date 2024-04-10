@@ -16,7 +16,10 @@
             "id": "teams-001",
             "name": "The Headshot Heroes",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/The-Headshot-Heroes.webp",
-            "founded": 1998
+            "founded": 1998,
+            "motto": "Precision in every pixel.",
+            "country": "United States",
+            "captain": "Alex"
         }
     },
     {
@@ -36,7 +39,10 @@
             "id": "teams-002",
             "name": "Tactical Trolls",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Tactical-Trolls.webp",
-            "founded": 1998
+            "founded": 1880,
+            "motto": "Unleash the tactical fury.",
+            "country": "Brazil",
+            "captain": "Sofia"
         }
     },
     {
@@ -56,7 +62,10 @@
             "id": "teams-003",
             "name": "Frag Fiends",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Frag-Fiends.webp",
-            "founded": 1998
+            "founded": 1996,
+            "motto": "Strategize, execute, dominate.",
+            "country": "Ireland",
+            "captain": "Liam"
         }
     },
     {
@@ -76,7 +85,10 @@
             "id": "teams-004",
             "name": "Precision Pandas",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Precision-Pandas.webp",
-            "founded": 1998
+            "founded": 2007,
+            "motto": "One shot, one victory.",
+            "country": "Russia",
+            "captain": "Viktor"
         }
     },
     {
@@ -96,7 +108,10 @@
             "id": "teams-005",
             "name": "Sneaky Snipers",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sneaky-Snipers.webp",
-            "founded": 1998
+            "founded": 2010,
+            "motto": "Adapt, overcome, conquer.",
+            "country": "China",
+            "captain": "Mei-Ling"
         }
     },
     {
@@ -116,7 +131,10 @@
             "id": "teams-006",
             "name": "Bombastic Bananas",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Bombastic-Bananas.webp",
-            "founded": 1998
+            "founded": 1995,
+            "motto": "Fearless in the face of danger.",
+            "country": "Italy",
+            "captain": "Luca"
         }
     }, 
     {
@@ -136,7 +154,10 @@
             "id": "teams-007",
             "name": "Victory Vipers",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Victory-Vipers.webp",
-            "founded": 1998
+            "founded": 2000,
+            "motto": "Mastery through teamwork.",
+            "country": "Saudi Arabia",
+            "captain": "Hassan"
         }
     },
     {
@@ -156,7 +177,10 @@
             "id": "teams-008",
             "name": "Aim Assist Assassins",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Aim-Assist-Assassins.webp",
-            "founded": 1998
+            "founded": 1888,
+            "motto": "Swift, silent, deadly.",
+            "country": "Sweden",
+            "captain": "Emma"
         }
     },
     {
@@ -176,7 +200,10 @@
             "id": "teams-009",
             "name": "Bulletproof Buffoons",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Bulletproof-Buffoons.webp",
-            "founded": 1998
+            "founded": 2020,
+            "motto": "Our aim never wavers.",
+            "country": "India",
+            "captain": "Aarav"
         }
     },
     {
@@ -196,7 +223,10 @@
             "id": "teams-010",
             "name": "Flashbang Falcons",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Flashbang-Falcons.webp",
-            "founded": 1998
+            "founded": 1993,
+            "motto": "Champions by design.",
+            "country": "Nigeria",
+            "captain": "Obi"
         }
     },
     {
@@ -216,7 +246,10 @@
             "id": "teams-011",
             "name": "No-Scope Ninjas",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/No-Scope-Ninjas.webp",
-            "founded": 1998
+            "founded": 1989,
+            "motto": "Victory forged in firefights.",
+            "country": "Germany",
+            "captain": "Fritz"
         }
     },
     {
@@ -236,7 +269,10 @@
             "id": "teams-012",
             "name": "Lethal Llamas",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Lethal-Llamas.webp",
-            "founded": 1998
+            "founded": 1979,
+            "motto": "Embrace the chaos, control the outcome.",
+            "country": "Japan",
+            "captain": "Yuki"
         }
     },
     {
@@ -256,7 +292,10 @@
             "id": "teams-013",
             "name": "C4 Commandos",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/C4-Commandos.webp",
-            "founded": 1998
+            "founded": 1999,
+            "motto": "Persistence breeds triumph.",
+            "country": "Australia",
+            "captain": "Jackson"
         }
     },
     {
@@ -276,7 +315,10 @@
             "id": "teams-014",
             "name": "Recoil Rebels",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Recoil-Rebels.webp",
-            "founded": 1998
+            "founded": 2018,
+            "motto": "Every play, a masterpiece.",
+            "country": "France",
+            "captain": "Camille"
         }
     },
     {
@@ -296,7 +338,10 @@
             "id": "teams-015",
             "name": "Boom Boom Brigade",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Boom-Boom-Brigade.webp",
-            "founded": 1998
+            "founded": 2016,
+            "motto": "Strength in unity, victory in diversity.",        
+            "country": "South Korea",
+            "captain": "Min-Joon"
         }
     },
     {
@@ -316,7 +361,10 @@
             "id": "teams-016",
             "name": "Tactical Toasters",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Tactical-Toasters.webp",
-            "founded": 1998
+            "founded": 2001,
+            "motto": "Bold moves, bigger wins.",
+            "country": "Canada",
+            "captain": "Nathan"
         }
     },
     {
@@ -336,7 +384,10 @@
             "id": "teams-017",
             "name": "KittyFlame Serpent",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/KittyFlame-Serpent.webp",
-            "founded": 1998
+            "founded": 2004,
+            "motto": "Outsmart, outplay, outgun.",
+            "country": "Mexico",
+            "captain": "Carlos"
         }
     },
     {
@@ -356,7 +407,10 @@
             "id": "teams-018",
             "name": "Draconic Purrfect",
             "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Draconic-Purrfect.webp",
-            "founded": 1998
+            "founded": 1998,
+            "motto": "Legacy of legends, future of champions.",
+            "country": "Belgium",
+            "captain": "Jan"
         }
     }
 ]

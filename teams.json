@@ -2,39 +2,111 @@
   "teams": [
     {
       "id": "teams-001",
-      "name": "Sentinels",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/Sentinels.jpg?raw=true",
-      "players": ["Phoenix", "Jett", "Sova", "Breach", "Omen"]
+      "name": "The Headshot Heroes",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/The-Headshot-Heroes.webp",
+      "founded": 1998
     },
     {
       "id": "teams-002",
-      "name": "Strikers",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/StrikersLogo.jpg?raw=true",
-      "players": ["Breach", "Sage", "Raze", "Yoru", "Cypher"]
+      "name": "Tactical Trolls",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Tactical-Trolls.webp",
+      "founded": 1880
     },
     {
       "id": "teams-003",
-      "name": "Titans",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/TitansLogo.jpg?raw=true",
-      "players": ["Omen", "Viper", "Reyna", "Killjoy", "Skye"]
+      "name": "Frag Fiends",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Frag-Fiends.webp",
+      "founded": 1996
     },
     {
       "id": "teams-004",
-      "name": "Guardians",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/GuardiansLogo.jpg?raw=true",
-      "players": ["Sova", "Cypher", "Brimstone", "Phoenix", "Sage"]
+      "name": "Precision Pandas",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Precision-Pandas.webp",
+      "founded": 2007
     },
     {
       "id": "teams-005",
-      "name": "Renegades",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/RenegadesLogo.jpg?raw=true",
-      "players": ["Viper", "Jett", "Breach", "Skye", "Reyna"]
+      "name": "Sneaky Snipers",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sneaky-Snipers.webp",
+      "founded": 2010
     },
     {
       "id": "teams-006",
-      "name": "Outlaws",
-      "logo": "https://github.com/denvenum1/ProjectWebontwikkeling/blob/main/OutlawsLogo.jpg?raw=true",
-      "players": ["Killjoy", "Raze", "Sova", "Omen", "Yoru"]
+      "name": "Bombastic Bananas",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Bombastic-Bananas.webp",
+      "founded": 1995
+    },
+    {
+      "id": "teams-007",
+      "name": "Victory Vipers",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Victory-Vipers.webp",
+      "founded": 2000
+    },
+    {
+      "id": "teams-008",
+      "name": "Aim Assist Assassins",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Aim-Assist-Assassins.webp",
+      "founded": 1888
+    },
+    {
+      "id": "teams-009",
+      "name": "Bulletproof Buffoons",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Bulletproof-Buffoons.webp",
+      "founded": 2020
+    },
+    {
+      "id": "teams-010",
+      "name": "Flashbang Falcons",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Flashbang-Falcons.webp",
+      "founded": 1993
+    },
+    {
+      "id": "teams-011",
+      "name": "No-Scope Ninjas",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/No-Scope-Ninjas.webp",
+      "founded": 1989
+    },
+    {
+      "id": "teams-012",
+      "name": "Lethal Llamas",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Lethal-Llamas.webp",
+      "founded": 1979
+    },
+    {
+      "id": "teams-013",
+      "name": "C4 Commandos",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/C4-Commandos.webp",
+      "founded": 1999
+    },
+    {
+      "id": "teams-014",
+      "name": "Recoil Rebels",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Recoil-Rebels.webp",
+      "founded": 2018
+    },
+    {
+      "id": "teams-015",
+      "name": "Boom Boom Brigade",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Boom-Boom-Brigade.webp",
+      "founded": 2016
+    },
+    {
+      "id": "teams-016",
+      "name": "Tactical Toasters",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Tactical-Toasters.webp",
+      "founded": 2001
+    },
+    {
+      "id": "teams-017",
+      "name": "KittyFlame Serpent",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/KittyFlame-Serpent.webp",
+      "founded": 2004
+    },
+    {
+      "id": "teams-018",
+      "name": "Draconic Purrfect",
+      "logo": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Draconic-Purrfect.webp",
+      "founded": 1998
     }
   ]
 }
