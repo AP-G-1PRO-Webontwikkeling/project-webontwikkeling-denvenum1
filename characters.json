@@ -241,7 +241,7 @@
         "avatar": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Brimstone_Artwork_Full.webp",
         "abilities": ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"],
         "role": "controller",
-        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png",
+        "roleSymbol": "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png",
         "teams": {
             "id": "teams-011",
             "name": "No-Scope Ninjas",
