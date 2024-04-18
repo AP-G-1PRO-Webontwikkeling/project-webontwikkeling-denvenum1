@@ -1,6 +1,5 @@
 import express from "express";
 import { Characters } from "./interface";
-fetchData()
 async function fetchData() {
     try {
         const response = await fetch("https://raw.githubusercontent.com/AP-G-1PRO-Webontwikkeling/project-webontwikkeling-denvenum1/main/characters.json");
@@ -85,6 +84,7 @@ app.get("/cards", async (req,res)=>{
 app.get("/characters/:id", async (req, res) => {
     const data = await fetchData();
     const characterId = req.params.id;
+
     const characters: Characters[] = data.filter((character: Characters) => character.id === characterId);
     if (!characters) {
         return res.status(404).send("Character not found");
@@ -103,5 +103,6 @@ app.get("/teams/:id", async (req, res) => {
 });
 
 app.listen(app.get("port"), async()=>{
+    await fetchData();
     console.log("server http://localhost:" + app.get("port"))
 })
