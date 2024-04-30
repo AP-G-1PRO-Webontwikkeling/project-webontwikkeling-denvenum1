@@ -19,11 +19,12 @@ async function exit() {
     process.exit(0);
 }
 
+//characters
 export async function getCharacters() {
     return await collectionCharacters.find({}).toArray();
 }
 
-export async function loadCharactersFromApi() {
+async function loadCharactersFromApi() {
     const Characters: Characters[] = await getCharacters();
 
     if (Characters.length == 0) {
@@ -33,6 +34,54 @@ export async function loadCharactersFromApi() {
         await collectionCharacters.insertMany(Characters);
     }
 }
+export async function searchAndSortCharacters(sortField: string, sortDirection: number, searchQuery: string) {
+    let query: any = {};
+
+    // Voeg de zoekquery toe aan de query als deze is opgegeven
+    if (searchQuery) {
+        query.name = { $regex: searchQuery, $options: 'i' };
+    }
+
+    try {
+        // Maak een leeg sorteerobject aan
+        let sortParams: any = {};
+
+        // Voeg de sorteerparameter toe aan het sorteerobject
+        sortParams[sortField] = sortDirection;
+
+        // Voer de zoekopdracht uit met de gegeven parameters
+        let result = await collectionCharacters.find(query).toArray();
+
+        // Pas de sorteerinstellingen toe op het resultaat
+        result.sort((a: any, b: any) => {
+            if (a[sortField] < b[sortField]) return sortDirection === 1 ? -1 : 1;
+            if (a[sortField] > b[sortField]) return sortDirection === 1 ? 1 : -1;
+            return 0;
+        });
+
+        return result;
+    } catch (error) {
+        console.error('Error searching and sorting characters:', error);
+        throw error;
+    }
+}
+
+
+
+//input waarde
+export const sortFields = [
+    { value: 'name', text: 'NAME' },
+    { value: 'birthdate', text: 'BIRTDATE' },
+    { text: "ABILITIES" },
+    { value: 'role', text: 'ROLE' },
+    { value: 'available', text: 'AVAILABLE' },
+    { text: 'VIEW' }
+];
+
+export const sortDirections = [
+    { value: 'asc', text: 'Ascending' },
+    { value: 'desc', text: 'Descending' }
+];
 
 export async function connect() {
     try {
