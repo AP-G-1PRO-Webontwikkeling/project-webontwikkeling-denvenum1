@@ -59,6 +59,7 @@ export async function searchAndSortCharacters(sortField: string, sortDirection: 
             return 0;
         });
 
+        // Retourneer de gesorteerde resultaten
         return result;
     } catch (error) {
         console.error('Error searching and sorting characters:', error);
@@ -66,7 +67,18 @@ export async function searchAndSortCharacters(sortField: string, sortDirection: 
     }
 }
 
+// Database functies
+export async function getCharacterById(id: string) {
+    return await collectionCharacters.findOne({ id: id });
+}
 
+export async function updateCharacter(id: string, updatedData: Characters) {
+    try {
+        await collectionCharacters.updateOne({ id: id }, { $set: updatedData });
+    } catch (error) {
+        throw error;
+    }
+}
 
 //input waarde
 export const sortFields = [

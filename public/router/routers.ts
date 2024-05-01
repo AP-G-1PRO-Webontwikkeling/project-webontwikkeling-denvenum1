@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { Characters } from '../../interface';
-import { getCharacters, searchAndSortCharacters, sortFields, sortDirections } from '../../database';
+import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter} from '../../database';
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -8,6 +8,7 @@ dotenv.config();
 let characterData: Characters[] = [];
 const router = Router();
 
+// Router
 router.get("/", async (req, res) => {
     try {
         // Sorteerparameters
@@ -38,9 +39,6 @@ router.get("/", async (req, res) => {
     }
 });
 
-
-
-
 router.get("/teams", async (req, res) => {
     const data = await getCharacters();
     res.render("teams", { 
@@ -65,6 +63,60 @@ router.get("/characters/:id", async (req, res) => {
     }
         res.render("cards", { characters: characters });
 });
+
+
+router.get("/characters/:id/edit", async (req, res) => {
+    const characterId = req.params.id;
+    try {
+        const character = await getCharacterById(characterId);
+        if (!character) {
+            return res.status(404).send("Character not found");
+        }
+        res.render("editCards", { character: character });
+    } catch (error) {
+        console.error('Error fetching character:', error);
+        res.status(500).send('Internal server error');
+    }
+});
+
+router.post("/characters/:id/edit", async (req, res) => {
+    const characterId = req.params.id;
+    const updatedCharacterData = req.body as Characters; // Typecasting naar het Characters-interface
+
+    // Bepaal de URL van het rol symbool op basis van de geselecteerde rol
+    let roleSymbolURL = "";
+    switch (updatedCharacterData.role) {
+        case "Duelist":
+            roleSymbolURL = "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Duelist.png";
+            break;
+        case "Initiator":
+            roleSymbolURL = "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Initiator.png";
+            break;
+        case "Controller":
+            roleSymbolURL = "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Controller.png";
+            break;
+        case "Sentinel":
+            roleSymbolURL = "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/Sentinel.png";
+            break;
+        default:
+            roleSymbolURL = "https://raw.githubusercontent.com/denvenum1/ProjectWebontwikkeling/main/default.png";
+    }
+
+    // Voeg de URL van het rol symbool toe aan de bijgewerkte karaktergegevens
+    updatedCharacterData.roleSymbol = roleSymbolURL;
+
+    // Update de karaktergegevens in de database
+    try {
+        await updateCharacter(characterId, updatedCharacterData);
+        res.redirect("/"); // Stuur de gebruiker terug naar de hoofdpagina
+    } catch (error) {
+        console.error('Error updating character:', error);
+        res.status(500).send('Internal server error');
+    }
+});
+
+
+
 
 router.get("/teams/:id", async (req, res) => {
     const data = await getCharacters();

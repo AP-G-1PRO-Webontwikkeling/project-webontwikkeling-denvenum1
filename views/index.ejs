@@ -10,7 +10,7 @@
                 <tr>
                     <% for (let field of sortFields) { %>
                         <th>
-                            <a href="?sortField=<%= field.value %>&sortDirection=<%= field.value === sortField ? sortDirection === 'asc' ? 'desc' : 'asc' : 'asc' %>">
+                            <a href="?sortField=<%= field.value %>&sortDirection=<%= field.value === sortField ? sortDirection === 'asc' ? 'desc' : 'asc' : 'asc' %>&q=<%= q %>">
                                 <%= field.text %>
                                 <% if (field.value === sortField) { %>
                                     <%- sortDirection === 'asc' ? '▲' : '▼' %>
