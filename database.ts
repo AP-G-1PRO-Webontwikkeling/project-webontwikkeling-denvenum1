@@ -1,12 +1,16 @@
 import { Collection, MongoClient } from "mongodb";
 import { Characters } from "./interface";
 import dotenv from "dotenv";
+import { User } from "./interface";
+import bcrypt from "bcrypt";
 
 dotenv.config();
 
-const uri = process.env.URI || "mongodb+srv://denvenum1:123@projectwebontwikkeling.kwqzi3l.mongodb.net/";
+const saltRounds : number = 10;
+export const uri = process.env.URI || "mongodb+srv://denvenum1:123@projectwebontwikkeling.kwqzi3l.mongodb.net/";
 const client = new MongoClient(uri);
 
+export const userCollection = client.db("projectwebontwikkeling").collection<User>("users");
 const collectionCharacters: Collection<Characters> = client.db("projectwebontwikkeling").collection<Characters>("Characters");
 
 async function exit() {
@@ -94,6 +98,35 @@ export const sortDirections = [
     { value: 'asc', text: 'Ascending' },
     { value: 'desc', text: 'Descending' }
 ];
+
+//login
+
+export async function registerUser(username :string | undefined, password : string | undefined, role : "ADMIN" | "USER") {
+    if (username === undefined || password === undefined) {
+        throw new Error("ADMIN_EMAIL and ADMIN_PASSWORD must be set in environment");
+    }
+    await userCollection.insertOne({
+        username: username,
+        password: await bcrypt.hash(password, saltRounds),
+        role: role
+    });
+}
+
+export async function loginUser(username: string, password: string) {
+    if (username === "" || password === "") {
+        throw new Error("Email and password required");
+    }
+    let user : User | null = await userCollection.findOne<User>({username: username});
+    if (user) {
+        if (await bcrypt.compare(password, user.password!)) {
+            return user;
+        } else {
+            throw new Error("Password incorrect");
+        }
+    } else {
+        throw new Error("User not found");
+    }
+}
 
 export async function connect() {
     try {

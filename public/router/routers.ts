@@ -1,38 +1,42 @@
 import { Router } from 'express';
-import { Characters } from '../../interface';
-import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter} from '../../database';
+import { Characters, User } from '../../interface';
+import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter, registerUser, loginUser} from '../../database';
 import dotenv from "dotenv";
 
 dotenv.config();
 
-let characterData: Characters[] = [];
 const router = Router();
-
+let characters: Characters[] = [];
 // Router
 router.get("/", async (req, res) => {
     try {
-        // Sorteerparameters
-        const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
-        const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : 'asc';
-        
-        // Zoekparameter
-        const searchQuery = typeof req.query.q === "string" ? req.query.q : "";
-        
-        // Converteer de sortDirection naar numeriek
-        const numericSortDirection = sortDirection === 'asc' ? 1 : -1;
-        
-        // Haal de karakters op met behulp van de zoek- en sorteermethode
-        const characters = await searchAndSortCharacters(sortField, numericSortDirection, searchQuery);
-        
-        // Render de pagina met de gesorteerde karakters en sorteer- en richtingsopties
-        res.render("index", { 
-            characters: characters,
-            sortFields: sortFields,
-            sortDirections: sortDirections,
-            sortField: sortField,
-            sortDirection: sortDirection,
-            q: searchQuery
-        }); 
+        if (req.session.user) {
+            // Sorteerparameters
+            const sortField = typeof req.query.sortField === "string" ? req.query.sortField : "name";
+            const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : 'asc';
+            
+            // Zoekparameter
+            const searchQuery = typeof req.query.q === "string" ? req.query.q : "";
+            
+            // Converteer de sortDirection naar numeriek
+            const numericSortDirection = sortDirection === 'asc' ? 1 : -1;
+            
+            // Haal de karakters op met behulp van de zoek- en sorteermethode
+            const characters = await searchAndSortCharacters(sortField, numericSortDirection, searchQuery);
+            
+            // Render de pagina met de gesorteerde karakters en sorteer- en richtingsopties
+            res.render("index", { 
+                user: req.session.user,
+                characters: characters,
+                sortFields: sortFields,
+                sortDirections: sortDirections,
+                sortField: sortField,
+                sortDirection: sortDirection,
+                q: searchQuery
+            }); 
+    } else {
+        res.redirect("/login");
+    }
     } catch (error) {
         console.error('Error handling request:', error);
         res.status(500).send('Internal server error');
@@ -115,8 +119,55 @@ router.post("/characters/:id/edit", async (req, res) => {
     }
 });
 
+router.get("/registreer", async (req, res) => {
+    res.render("registreer", { fortnite: characters });
+});
 
+router.post('/registreer', async (req, res) => {
+    const { name, password, confirmPassword, role } = req.body;
 
+    try {
+        if (password !== confirmPassword) {
+            return res.render('registreer', {
+                message: 'Wachtwoorden komen niet overeen.'
+            });
+        }
+        await registerUser(name, password, role);
+        res.redirect('/login');
+    } catch (error) {
+        console.error('Er is een fout opgetreden tijdens het registreren:', error);
+        res.render('registreer', {
+            message: 'Gebruikersnaam is al in gebruik.'
+        });
+    }
+});
+
+router.get("/login", async (req, res) => {
+    res.render("login", { fortnite: characters });
+});
+
+router.post('/login', async (req, res) => {
+    const { username, password} = req.body;
+    try {
+        const loggedIn = await loginUser(username, password);
+
+        req.session.user = { username, password };
+        if (!loggedIn) {
+            return res.render('login', {
+                message: 'Foute gebruikersnaam of wachtwoord!',
+            });
+        }
+        return res.redirect('/');
+    } catch (error) {
+        console.error('Er is een fout opgetreden tijdens het inloggen:', error);
+        return res.redirect('/login');
+    }
+});
+router.get("/logout", async (req, res) => {
+    req.session.destroy(() => {
+        res.redirect("/login");
+    });
+});
 
 router.get("/teams/:id", async (req, res) => {
     const data = await getCharacters();

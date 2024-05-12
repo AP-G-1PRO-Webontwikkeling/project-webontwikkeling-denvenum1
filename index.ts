@@ -2,6 +2,7 @@ import express from "express";
 import router from "./public/router/routers";
 import { connect } from './database';
 import { errorHandler } from "./public/middleware/middleware"
+import session from "./session";
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.static("public"));
 
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ extended: true }));
+app.use(session);
 
 app.use("/", router); 
 

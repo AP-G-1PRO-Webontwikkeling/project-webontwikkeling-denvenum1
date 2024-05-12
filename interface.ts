@@ -1,3 +1,5 @@
+import { ObjectId } from "mongodb";
+
 export interface Characters {
     id:             string;
     name:           string;
@@ -22,4 +24,11 @@ export interface Teams {
     motto: string;
     country: string;
     captain: string;
+}
+
+export interface User {
+    _id?: ObjectId;
+    username: string;
+    password?: string;
+    role?: "ADMIN" | "USER";
 }
