@@ -1,6 +1,6 @@
+<%- include('header.ejs') %>
     <section class="login-section">
         <form class="login-form" action="/login" method="POST">
-            <img class="login-image" src="/assets/icons/questionpf.png" alt="not-logged-in">
             <h1 class="login-h1">Login</h1>
             <label class="label-username" for="username">Gebruikersnaam:</label>
             <input type="text" id="username" name="username" required>
@@ -16,4 +16,5 @@
             <a href="/registreer">Nog geen account?</a>
         </form>
     </section>
+<%- include('footer.ejs') %>
  

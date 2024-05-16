@@ -1,6 +1,6 @@
+<%- include('header.ejs') %>
     <section class="registreer-section">
         <form class="registreer-form" action="/registreer" method="POST">
-            <img class="registreer-image" src="/assets/icons/questionpf.png" alt="niet-geregistreerd">
             <h1 class="registreer-h1">Registreer</h1>
             <label class="label-username" for="username">Gebruikersnaam:</label>
             <input type="text" id="username" name="name" required>
@@ -25,3 +25,4 @@
             <a class="tochAanmelden" href="/login">Toch aanmelden?</a>
         </form>
     </section>
+<%- include('footer.ejs') %>

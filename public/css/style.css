@@ -220,10 +220,177 @@ table tbody tr {
     align-items: flex-end;
     justify-content: center;
 }
+
+/*--- login ---*/ 
+.login-section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin: 3rem 0;
+    padding: 50px 0;;
+    background-color: #18181C;
+    border-radius: 1rem;
+
+}
+
+.login-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-form input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    font-family: FortniteFont;
+    font-size: larger;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.login-form input[type="submit"]:hover {
+    border: 1.5px solid white;
+}
+
+.login-button {
+    display: flex;
+    background-color: yellow;
+    color: black;
+    font-family: FortniteFont;
+    font-size: larger;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    border: 1.5px solid white;
+}
+
+.label-username,
+.label-password {
+    font-family: FortniteMedium;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-form a {
+    color: white;
+    margin: 1rem;
+    text-decoration: underline;
+}
+
+/*--- registerpage ---*/
+
+.registreer-section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.registreer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin: 3rem 0;
+    padding: 50px 0;
+    background-color: #18181C;
+    border-radius: 1rem;
+}
+
+.registreer-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.registreer-form input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    font-family: FortniteFont;
+    font-size: larger;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.registreer-form input[type="submit"]:hover {
+    border: 1.5px solid white;
+}
+
+.error-message {
+    font-family: FortniteMedium;
+    color: red;
+    text-decoration: underline;
+    padding: 0;
+    text-align: center;
+}
+
+.label-username,
+.label-password {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.registreer-button {
+    margin: 1rem 0;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: yellow;
+    font-family: FortniteFont;
+    font-size: larger;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    width: 70%;
+
+}
+
+.registreer-button:hover {
+    border: 1.5px solid white;
+}
+
+.tochAanmelden {
+    color: white;
+    margin: 1rem;
+    text-decoration: underline;
+}
+
 /*--- mediaquerries ---*/
 @media screen and (max-width: 1120px) {
     .card {
         width: 40%;
+    }
+    .registreer-button .login-section{
+        width: 50%;
     }
 }
 @media screen and (max-width: 750px) {

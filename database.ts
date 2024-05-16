@@ -100,6 +100,19 @@ export const sortDirections = [
 ];
 
 //login
+async function createDefaultUsers() {
+    try {
+        // Voeg de admin gebruiker toe
+        await registerUser("admin", "admin_password", "ADMIN");
+
+        // Voeg de standaard gebruiker toe
+        await registerUser("user", "user_password", "USER");
+
+        console.log("Default users created successfully.");
+    } catch (error) {
+        console.error("Error creating default users:", error);
+    }
+}
 
 export async function registerUser(username :string | undefined, password : string | undefined, role : "ADMIN" | "USER") {
     if (username === undefined || password === undefined) {
@@ -131,6 +144,7 @@ export async function loginUser(username: string, password: string) {
 export async function connect() {
     try {
         await client.connect();
+        await createDefaultUsers();
         await loadCharactersFromApi();
         console.log("Connected to database");
         process.on("SIGINT", exit);

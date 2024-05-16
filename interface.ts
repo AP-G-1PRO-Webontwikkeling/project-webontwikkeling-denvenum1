@@ -29,6 +29,6 @@ export interface Teams {
 export interface User {
     _id?: ObjectId;
     username: string;
-    password?: string;
+    password: string;
     role?: "ADMIN" | "USER";
 }
