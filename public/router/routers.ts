@@ -46,14 +46,16 @@ router.get("/", async (req, res) => {
 router.get("/teams", async (req, res) => {
     const data = await getCharacters();
     res.render("teams", { 
-        characters: data
+        characters: data,
+        user: req.session.user
     }); 
 });
 
 router.get("/cards", async (req, res) => {
     const data = await getCharacters();
-    res.render("cards", {
-        characters: data,
+    res.render("cards", { characters: data,
+        role: req.session.user?.role,
+        user: req.session.user
     });
 });
 
@@ -67,10 +69,10 @@ router.get("/characters/:id", async (req, res) => {
         return res.status(404).send("Character not found");
     }
         res.render("cards", { characters: characters,
-        role: req.session.user?.role 
+        role: req.session.user?.role,
+        user: req.session.user
          });
 });
-
 
 router.get("/characters/:id/edit", async (req, res) => {
     const characterId = req.params.id;
@@ -79,7 +81,9 @@ router.get("/characters/:id/edit", async (req, res) => {
         if (!character) {
             return res.status(404).send("Character not found");
         }
-        res.render("editCards", { character: character });
+        res.render("editCards", { character: character,
+            user : req.session.user
+        });
     } catch (error) {
         console.error('Error fetching character:', error);
         res.status(500).send('Internal server error');
@@ -161,7 +165,9 @@ router.get("/teams/:id", async (req, res) => {
     if (!characters) {
         return res.status(404).send("Character not found");
     }
-        res.render("teamCards", { characters: characters });
+        res.render("teamCards", { characters: characters,
+            user : req.session.user
+         });
 });
 
 export default router;
