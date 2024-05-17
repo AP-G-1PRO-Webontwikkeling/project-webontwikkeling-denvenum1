@@ -9,22 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="login-section">
-        <form class="login-form" action="/login" method="POST">
-            <h1 class="login-h1">Login</h1>
+    <section class="registreer-section">
+        <form class="registreer-form" action="/registreer" method="POST">
+            <h1 class="registreer-h1">Registreer</h1>
             <label class="label-username" for="username">Gebruikersnaam:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="name" required>
 
             <label class="label-password" for="password">Wachtwoord:</label>
             <input type="password" id="password" name="password" required>
+
+            <label class="label-password" for="password">Bevestig wachtwoord:</label>
+            <input type="password" id="password" name="confirmPassword" required>
+            
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="USER" selected>user</option>
+                <option value="ADMIN">admin</option>
+            </select>
 
             <% if (typeof message !== 'undefined') { %>
                 <p class="error-message"><%= message %></p>
             <% } %>
 
-            <button class="login-button" type="submit">Aanmelden</button>
-            <a href="/registreer">Nog geen account?</a>
+            <button class="registreer-button" type="submit">Registreer</button>
+            <a class="tochAanmelden" href="/login">Toch aanmelden?</a>
         </form>
     </section>
 <%- include('footer.ejs') %>
- 

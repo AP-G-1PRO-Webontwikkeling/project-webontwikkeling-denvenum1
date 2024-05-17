@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { Characters, User } from '../../interface';
-import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter, loginUser} from '../../database';
+import { Characters } from '../../interface';
+import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter, loginUser, registerUser} from '../../database';
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -127,7 +127,7 @@ router.post("/characters/:id/edit", async (req, res) => {
 });
 
 router.get("/login", async (req, res) => {
-    res.render("login", { fortnite: characters });
+    res.render("login");
 });
 
 router.post('/login', async (req, res) => {
@@ -157,6 +157,28 @@ router.post("/logout", async (req, res) => {
         res.redirect("/login");
     });
 });
+router.get("/registreer", async (req,res)=>{
+    res.render("registreer")
+})
+router.post('/registreer', async (req, res) => {
+    const { username, password, confirmPassword, role } = req.body;
+
+    try {
+        if (password !== confirmPassword) {
+            return res.render('registreer', {
+                message: 'Wachtwoorden komen niet overeen.'
+            });
+        }
+        await registerUser(username, password, role);
+        res.redirect('/login');
+    } catch (error) {
+        console.error('Er is een fout opgetreden tijdens het registreren:', error);
+        res.render('registreer', {
+            message: 'Gebruikersnaam is al in gebruik.'
+        });
+    }
+});
+
 
 router.get("/teams/:id", async (req, res) => {
     const data = await getCharacters();
