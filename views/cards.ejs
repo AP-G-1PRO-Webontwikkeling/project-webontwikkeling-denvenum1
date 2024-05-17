@@ -19,7 +19,9 @@
                     <p><%= character.abilities[2] %></p>
                     <p><%= character.abilities[3] %></p>
                 </div>
-                <a href="/characters/<%= character.id %>/edit" class="edit-button">Edit</a>
+                <% if (role === "ADMIN") {%>
+                    <a href="/characters/<%= character.id %>/edit" class="edit-button">Edit</a>
+                <%}%>
             </div>
         </article>
         <% } %>

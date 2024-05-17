@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { Characters, User } from '../../interface';
-import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter, registerUser, loginUser} from '../../database';
+import { getCharacters, searchAndSortCharacters, sortFields, sortDirections,getCharacterById, updateCharacter, loginUser} from '../../database';
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -50,12 +50,13 @@ router.get("/teams", async (req, res) => {
     }); 
 });
 
-router.get("/cards", async (req,res)=>{
+router.get("/cards", async (req, res) => {
     const data = await getCharacters();
-    res.render("cards",{
-        characters: data
+    res.render("cards", {
+        characters: data,
     });
 });
+
 
 router.get("/characters/:id", async (req, res) => {
     const data = await getCharacters();
@@ -65,7 +66,9 @@ router.get("/characters/:id", async (req, res) => {
     if (!characters) {
         return res.status(404).send("Character not found");
     }
-        res.render("cards", { characters: characters });
+        res.render("cards", { characters: characters,
+        role: req.session.user?.role 
+         });
 });
 
 
@@ -119,51 +122,33 @@ router.post("/characters/:id/edit", async (req, res) => {
     }
 });
 
-router.get("/registreer", async (req, res) => {
-    res.render("registreer", { fortnite: characters });
-});
-
-router.post('/registreer', async (req, res) => {
-    const { name, password, confirmPassword, role } = req.body;
-
-    try {
-        if (password !== confirmPassword) {
-            return res.render('registreer', {
-                message: 'Wachtwoorden komen niet overeen.'
-            });
-        }
-        await registerUser(name, password, role);
-        res.redirect('/login');
-    } catch (error) {
-        console.error('Er is een fout opgetreden tijdens het registreren:', error);
-        res.render('registreer', {
-            message: 'Gebruikersnaam is al in gebruik.'
-        });
-    }
-});
-
 router.get("/login", async (req, res) => {
     res.render("login", { fortnite: characters });
 });
 
 router.post('/login', async (req, res) => {
-    const { username, password} = req.body;
+    const { username, password } = req.body;
     try {
-        const loggedIn = await loginUser(username, password);
-
-        req.session.user = { username, password };
-        if (!loggedIn) {
+        const user = await loginUser(username, password);
+        if (user) {
+            req.session.user = { 
+                username: user.username, 
+                password: user.password,
+                role: user.role 
+            };
+            return res.redirect('/');
+        } else {
             return res.render('login', {
                 message: 'Foute gebruikersnaam of wachtwoord!',
             });
         }
-        return res.redirect('/');
     } catch (error) {
         console.error('Er is een fout opgetreden tijdens het inloggen:', error);
         return res.redirect('/login');
     }
 });
-router.get("/logout", async (req, res) => {
+
+router.post("/logout", async (req, res) => {
     req.session.destroy(() => {
         res.redirect("/login");
     });

@@ -102,13 +102,15 @@ export const sortDirections = [
 //login
 async function createDefaultUsers() {
     try {
+        const users : User[] = await userCollection.find({}).toArray();
+    if (users.length == 0) {
         // Voeg de admin gebruiker toe
-        await registerUser("admin", "admin_password", "ADMIN");
-
+        await registerUser("admin", "admin123", "ADMIN");
         // Voeg de standaard gebruiker toe
-        await registerUser("user", "user_password", "USER");
-
+        await registerUser("user", "user123", "USER");
         console.log("Default users created successfully.");
+    }
+
     } catch (error) {
         console.error("Error creating default users:", error);
     }
@@ -118,6 +120,7 @@ export async function registerUser(username :string | undefined, password : stri
     if (username === undefined || password === undefined) {
         throw new Error("ADMIN_EMAIL and ADMIN_PASSWORD must be set in environment");
     }
+    
     await userCollection.insertOne({
         username: username,
         password: await bcrypt.hash(password, saltRounds),

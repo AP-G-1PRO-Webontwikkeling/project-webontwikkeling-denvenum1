@@ -30,5 +30,5 @@ export interface User {
     _id?: ObjectId;
     username: string;
     password: string;
-    role?: "ADMIN" | "USER";
+    role: "ADMIN" | "USER";
 }

@@ -1,4 +1,14 @@
-<%- include('header.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/font.css">
+    <title>Document</title>
+</head>
+<body>
     <section class="login-section">
         <form class="login-form" action="/login" method="POST">
             <h1 class="login-h1">Login</h1>
@@ -13,7 +23,6 @@
             <% } %>
 
             <button class="login-button" type="submit">Aanmelden</button>
-            <a href="/registreer">Nog geen account?</a>
         </form>
     </section>
 <%- include('footer.ejs') %>
