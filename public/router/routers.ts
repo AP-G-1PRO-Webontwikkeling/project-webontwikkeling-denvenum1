@@ -161,15 +161,14 @@ router.get("/registreer", async (req,res)=>{
     res.render("registreer")
 })
 router.post('/registreer', async (req, res) => {
-    const { username, password, confirmPassword, role } = req.body;
-
+    const { username, password, confirmPassword } = req.body;
     try {
         if (password !== confirmPassword) {
             return res.render('registreer', {
                 message: 'Wachtwoorden komen niet overeen.'
             });
         }
-        await registerUser(username, password, role);
+        await registerUser(username, password,"USER");
         res.redirect('/login');
     } catch (error) {
         console.error('Er is een fout opgetreden tijdens het registreren:', error);
@@ -178,7 +177,6 @@ router.post('/registreer', async (req, res) => {
         });
     }
 });
-
 
 router.get("/teams/:id", async (req, res) => {
     const data = await getCharacters();

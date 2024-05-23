@@ -2,7 +2,7 @@ import express from "express";
 import router from "./public/router/routers";
 import { connect } from './database';
 import { errorHandler } from "./public/middleware/middleware"
-import session from "./session";
+import session from "./public/middleware/session";
 
 const app = express();
 

@@ -320,6 +320,7 @@ table tbody tr {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: white;
 }
 
 .registreer-form input[type="submit"] {
