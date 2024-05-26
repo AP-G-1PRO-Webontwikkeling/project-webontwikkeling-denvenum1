@@ -41,29 +41,16 @@ async function loadCharactersFromApi() {
 export async function searchAndSortCharacters(sortField: string, sortDirection: number, searchQuery: string) {
     let query: any = {};
 
-    // Voeg de zoekquery toe aan de query als deze is opgegeven
     if (searchQuery) {
         query.name = { $regex: searchQuery, $options: 'i' };
     }
 
     try {
-        // Maak een leeg sorteerobject aan
         let sortParams: any = {};
-
-        // Voeg de sorteerparameter toe aan het sorteerobject
         sortParams[sortField] = sortDirection;
 
-        // Voer de zoekopdracht uit met de gegeven parameters
-        let result = await collectionCharacters.find(query).toArray();
+        let result = await collectionCharacters.find(query).sort(sortParams).toArray();
 
-        // Pas de sorteerinstellingen toe op het resultaat
-        result.sort((a: any, b: any) => {
-            if (a[sortField] < b[sortField]) return sortDirection === 1 ? -1 : 1;
-            if (a[sortField] > b[sortField]) return sortDirection === 1 ? 1 : -1;
-            return 0;
-        });
-
-        // Retourneer de gesorteerde resultaten
         return result;
     } catch (error) {
         console.error('Error searching and sorting characters:', error);
@@ -71,7 +58,6 @@ export async function searchAndSortCharacters(sortField: string, sortDirection: 
     }
 }
 
-// Database functies
 export async function getCharacterById(id: string) {
     return await collectionCharacters.findOne({ id: id });
 }
@@ -84,7 +70,6 @@ export async function updateCharacter(id: string, updatedData: Characters) {
     }
 }
 
-//input waarde
 export const sortFields = [
     { value: 'name', text: 'NAME' },
     { value: 'birthdate', text: 'BIRTDATE' },
@@ -104,9 +89,7 @@ async function createDefaultUsers() {
     try {
         const users : User[] = await userCollection.find({}).toArray();
     if (users.length == 0) {
-        // Voeg de admin gebruiker toe
         await registerUser("admin", "admin123", "ADMIN");
-        // Voeg de standaard gebruiker toe
         await registerUser("user", "user123", "USER");
         console.log("Default users created successfully.");
     }
